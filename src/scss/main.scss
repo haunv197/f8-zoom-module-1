@@ -1,0 +1,57 @@
+@use "./reset";
+
+//Component
+
+// Layout
+@use "./layout/grid";
+@use "./layout/header";
+@use "./layout/footer";
+
+// Pages
+@use "./pages/sign-in";
+@use "./pages/sign-up";
+@use "./pages/index";
+@use "./pages/collection";
+@use "./pages/payment";
+@use "./pages/account";
+
+// Common
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  color: inherit;
+}
+
+input,
+textarea,
+button,
+select {
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all ease 0.3s;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
