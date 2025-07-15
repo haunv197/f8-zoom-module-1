@@ -1,0 +1,234 @@
+.account {
+  &-banner {
+    background-color: var(--color-grey-4);
+  }
+  &-content {
+    margin-top: -10.6rem;
+  }
+}
+
+.account {
+  &-content {
+    .col-left {
+      width: 39rem;
+    }
+    .col-right {
+      flex: 1;
+    }
+
+    %account-item-background-border {
+      border-radius: 2rem;
+      border: 0.1rem solid var(--color-grey-5);
+      background: var(--color-white);
+    }
+
+    &__setting {
+      @extend %account-item-background-border;
+      padding-top: 5.8rem;
+      padding-bottom: 5.8rem;
+      height: 100%;
+
+      .info-user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-secondary);
+
+        &__avatar {
+          display: flex;
+          aspect-ratio: 127 / 127;
+          width: 12.7rem;
+          margin-bottom: 2.4rem;
+          img {
+            border-radius: 50%;
+          }
+        }
+
+        &__name {
+          font-family: var(--font-quicksand);
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 0.8rem;
+        }
+
+        &__btn {
+          display: inline-block;
+          font-family: var(--font-inter);
+          font-size: 1.2rem;
+          font-weight: 400;
+          border-radius: 10rem;
+          background: var(--color-secondary-11);
+          padding: 0.4rem 1.2rem;
+        }
+      }
+
+      .account-line {
+        margin-top: 2.85rem;
+        margin-bottom: 4.15rem;
+        text-align: center;
+      }
+
+      .account-navigation {
+        padding-left: 3.5rem;
+        ul {
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
+        }
+        .nav-link {
+          display: flex;
+          align-items: center;
+          gap: 2.4rem;
+          border-radius: 2rem;
+          padding: 0.9rem 2.5rem;
+          background: var(--color-white);
+          max-width: 25.9rem;
+
+          color: var(--color-grey-7);
+          font-family: var(--font-quicksand);
+          font-size: 1.6rem;
+          font-weight: 600;
+
+          &.active,
+          &:hover {
+            background: var(--color-grey-4);
+            color: var(--color-primary);
+            svg path {
+              fill: var(--color-primary);
+            }
+          }
+          .icon {
+            display: flex;
+          }
+        }
+      }
+    }
+
+    &__overview {
+      @extend %account-item-background-border;
+      font-family: var(--font-quicksand);
+      font-size: 1.6rem;
+      padding: 4.7rem 3.8rem 4.7rem 2.9rem;
+      min-height: 62.8rem;
+
+      .row-custom {
+        gap: 1.6rem;
+      }
+      .col-item {
+        max-width: 37.2rem;
+      }
+
+      .overview {
+        &-title {
+          color: var(--color-secondary);
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 2.4rem;
+        }
+
+        &-item {
+          border-radius: 2rem;
+          border: 0.1rem solid var(--color-grey-5);
+          background: var(--color-white);
+          padding: 1.8rem 1.8rem 3rem 1.8rem;
+          height: 100%;
+
+          &__title {
+            color: #353535;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .account-balance {
+        &__line {
+          margin-top: 2.25rem;
+          margin-bottom: 4rem;
+        }
+
+        &__content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1rem;
+        }
+
+        &__amount {
+          display: flex;
+          align-items: center;
+          gap: 1.2rem;
+
+          .icon {
+            display: flex;
+          }
+
+          .text {
+            color: var(--color-primary);
+            font-weight: 700;
+          }
+        }
+
+        &__btn {
+          display: inline-block;
+          border-radius: 10rem;
+          background: var(--color-secondary-11);
+          color: var(--color-secondary);
+          font-family: var(--font-inter);
+          font-size: 1.2rem;
+          font-weight: 400;
+          padding: 0.4rem 1.2rem;
+        }
+      }
+
+      .account-orders {
+        display: flex;
+        flex-direction: column;
+        gap: 5.2rem;
+
+        &__header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        &__more {
+          display: flex;
+          gap: 0.8rem;
+          color: rgba(127, 127, 127, 0.5);
+          font-family: var(--font-inter);
+          font-size: 1.2rem;
+          font-weight: 400;
+
+          &:hover {
+            color: var(--color-primary);
+          }
+        }
+
+        &__list {
+          display: flex;
+          gap: 0.4rem;
+        }
+
+        &__item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 25%;
+          gap: 0.8rem;
+
+          .number {
+            color: var(--color-primary);
+            font-size: 2rem;
+            font-weight: 600;
+          }
+
+          .text {
+            color: var(--color-grey-7);
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
