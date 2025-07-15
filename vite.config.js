@@ -12,11 +12,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: path.resolve(__dirname, "src/index.html"),
-        course: path.resolve(__dirname, "src/sign-in.html"),
-        shop: path.resolve(__dirname, "src/sign-up.html"),
-        contact: path.resolve(__dirname, "src/collection.html"),
-        contact: path.resolve(__dirname, "src/payment.html"),
-        contact: path.resolve(__dirname, "src/account.html"),
+        signIn: path.resolve(__dirname, "src/sign-in.html"),
+        signUp: path.resolve(__dirname, "src/sign-up.html"),
+        collection: path.resolve(__dirname, "src/collection.html"),
+        payment: path.resolve(__dirname, "src/payment.html"),
+        account: path.resolve(__dirname, "src/account.html"),
         // ...
       },
     },

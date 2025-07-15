@@ -3,9 +3,17 @@
 //Component
 
 // Layout
-@use "./layout/grid";
-@use "./layout/header";
-@use "./layout/footer";
+@use "./layouts/grid";
+@use "./layouts/header";
+@use "./layouts/footer";
+
+//Component
+@use "./components/banner-btn-view-all";
+@use "./components/product-head";
+@use "./components/product-item";
+@use "./components/product-group-heading";
+@use "./components/product-group-item";
+@use "./components/news-item";
 
 // Pages
 @use "./pages/sign-in";
@@ -16,7 +24,37 @@
 @use "./pages/account";
 
 // Common
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
 
+:root {
+  --font-manrope: "Manrope", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  --font-heading-1: 4.8rem;
+  --font-heading-2: 4rem;
+  --font-heading-3: 3.2rem;
+  --font-heading-4: 2.4rem;
+  --font-heading-5: 2rem;
+  --font-heading-6: 1.8rem;
+
+  --color-primary: #ed5a25;
+  --color-secondary: #323232;
+  --color-secondary-1: #782000;
+  --color-secondary-11: #ffdbce;
+  --color-grey: #404040;
+  --color-grey-3: #aeaeae;
+  --color-black: #000;
+  --color-black-2: #3e3e3e;
+  --color-white: #fff;
+  --color-grey-4: #fff4f1;
+  --color-grey-5: #e5e5e5;
+  --color-grey-6: #f2f2f2;
+  --color-placeholder: #afafaf;
+  --color-text-4: #787777;
+  --color-border-1: #ededed;
+}
 * {
   box-sizing: border-box;
 }
@@ -24,6 +62,11 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.42857143;
 }
 
 a {

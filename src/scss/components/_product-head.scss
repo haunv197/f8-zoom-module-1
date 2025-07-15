@@ -1,0 +1,53 @@
+.product {
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-quicksand);
+    margin-bottom: 3.5rem;
+
+    &__title {
+      color: var(--color-secondary);
+      font-size: var(--font-heading-3);
+      font-weight: 600;
+    }
+
+    &__action {
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.5;
+      gap: 1.2rem;
+      flex-shrink: 0;
+
+      .action-list {
+        display: flex;
+        gap: 0.5rem;
+
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 2.4rem;
+          height: 2.4rem;
+          border-radius: 50%;
+          background-color: #ffece5;
+
+          svg path {
+            fill: var(--color-primary);
+          }
+
+          &.active,
+          &:hover {
+            background-color: var(--color-primary);
+
+            svg path {
+              fill: var(--color-white);
+            }
+          }
+        }
+      }
+    }
+  }
+}

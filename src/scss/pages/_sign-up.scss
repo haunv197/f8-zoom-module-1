@@ -1,0 +1,60 @@
+.sign-up {
+  & .btn-sign-up {
+    padding: 1.45rem 5.71rem;
+  }
+
+  .sign__form {
+    padding-top: 10.5rem;
+    padding-bottom: 7.5rem;
+
+    h1 {
+      margin-bottom: 2.9rem;
+    }
+    .form-group {
+      &.form-group-email {
+        margin-bottom: 1.9rem;
+      }
+    }
+    .social-network {
+      margin-top: 7rem;
+    }
+  }
+
+  .sign__content {
+    padding-right: 4rem;
+
+    .content-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      font-family: var(--font-quicksand);
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+      }
+
+      .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        color: var(--color-black);
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.5;
+        border-radius: 8px;
+        background-color: rgb(240 215 207);
+        flex-shrink: 0;
+      }
+
+      .text {
+        color: var(--color-secondary);
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

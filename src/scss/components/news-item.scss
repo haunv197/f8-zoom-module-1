@@ -1,0 +1,32 @@
+.news-item {
+  padding: 2.2rem;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--color-border-1);
+  background: var(--color-white);
+
+  &:hover {
+    border-color: var(--color-primary);
+  }
+
+  &:hover &__img img {
+    transform: scale(1.1);
+  }
+
+  &__img {
+    margin-bottom: 2.1rem;
+    aspect-ratio: 329.972/ 265;
+    border-radius: 1.5rem;
+    overflow: hidden;
+  }
+
+  &__title {
+    color: var(--color-grey);
+    font-family: var(--font-poppins);
+    font-size: 1.5525rem;
+    font-weight: 400;
+  }
+
+  &:hover &__title {
+    color: var(--color-primary);
+  }
+}

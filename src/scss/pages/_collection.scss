@@ -1,0 +1,11 @@
+.collection {
+  &__product {
+    .showing-result {
+      color: var(--color-secondary);
+      font-family: var(--font-manrope);
+      font-size: 1.472rem;
+      font-weight: 500;
+      margin-bottom: 2.4rem;
+    }
+  }
+}

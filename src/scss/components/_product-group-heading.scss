@@ -1,0 +1,48 @@
+.product-group {
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.8rem;
+    background-color: var(--color-grey-4);
+    border-radius: 1rem;
+    gap: 1rem;
+  }
+
+  &__title {
+    color: var(---color-grey);
+    font-family: var(--font-quicksand);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5556;
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50%;
+      background-color: #ffece5;
+
+      svg path {
+        fill: var(--color-primary);
+      }
+
+      &.active,
+      &:hover {
+        background-color: var(--color-primary);
+
+        svg path {
+          fill: var(--color-white);
+        }
+      }
+    }
+  }
+}

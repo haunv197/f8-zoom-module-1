@@ -2,12 +2,12 @@
 
 /* XXL */
 .container {
-  --spacer: 30px;
+  --spacer: 24px;
   --gutter-x: var(--spacer);
   --gutter-y: 0;
 
-  max-width: 1320px;
-  /* width: 100%; */
+  max-width: 1224px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: calc(var(--gutter-x) / 2);
@@ -35,7 +35,7 @@
 }
 .row[class*="row-cols-"] > * {
   flex: 0 0 auto;
-  width: calc(100% / 12 * var(--row-cols-number));
+  width: calc(100% / var(--row-cols-number));
 }
 
 .row > [class*="offset-"] {
@@ -232,10 +232,39 @@
   --gutter-y: calc(var(--spacer) * 3);
 }
 
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pl-1 {
+  padding-left: calc(var(--gutter-x) / 2 * 0.25) !important;
+}
+.pl-2 {
+  padding-left: calc(var(--gutter-x) / 2 * 0.5) !important;
+}
+.pl-3 {
+  padding-left: calc(var(--gutter-x) / 2) !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
 /* XL */
 @media (max-width: 1399.98px) {
   .container {
-    max-width: 1140px;
+    max-width: 1230px;
   }
 
   .row-cols-xl-1 {
