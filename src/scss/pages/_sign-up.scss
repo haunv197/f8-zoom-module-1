@@ -58,3 +58,15 @@
     }
   }
 }
+
+@media (max-width: 767.98px) {
+  .sign-up {
+    .sign__form {
+      padding: 3rem;
+
+      .social-network {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

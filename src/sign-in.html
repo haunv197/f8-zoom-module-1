@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include("./partials/head.ejs") %>
+<%- include("./partials/head.ejs") %>
 
   <body>
     <div class="wrapper">
@@ -11,7 +11,7 @@
               <div class="sign-common__wrapper">
                 <div class="row">
                   <!-- Sign In Content-->
-                  <div class="col-6 col-md-12">
+                  <div class="col-6 col-md-12 col-sign__content">
                     <div class="sign__content">
                       <h2 class="title">One account for all services</h2>
                       <p class="description">
@@ -25,43 +25,20 @@
                   </div>
 
                   <!-- Sign In Form-->
-                  <div class="col-6 col-md-12 pl-0 col-sign__form">
+                  <div class="col-6 col-md-12 col-sign__form">
                     <form class="sign__form">
                       <h1>SIGN IN</h1>
 
                       <div class="form-group form-group-email">
-                        <input
-                          type="text"
-                          id="email"
-                          name="email"
-                          class="form-control"
-                          placeholder="Email Address"
-                        />
-                        <img
-                          class="icon-input"
-                          src="/assets/images/sign-in-and-up/icon-email.svg"
-                          alt="Email"
-                        />
+                        <input type="text" id="email" name="email" class="form-control" placeholder="Email Address" />
+                        <img class="icon-input" src="/assets/images/sign-in-and-up/icon-email.svg" alt="Email" />
                       </div>
 
                       <div class="form-group form-group-password">
-                        <input
-                          type="text"
-                          id="email"
-                          name="email"
-                          class="form-control"
-                          placeholder="Password"
-                        />
-                        <img
-                          class="icon-input"
-                          src="/assets/images/sign-in-and-up/icon-password.svg"
-                          alt="Password"
-                        />
+                        <input type="text" id="email" name="email" class="form-control" placeholder="Password" />
+                        <img class="icon-input" src="/assets/images/sign-in-and-up/icon-password.svg" alt="Password" />
                         <button type="submit" class="btn-submit">
-                          <img
-                            src="/assets/images/sign-in-and-up/icon-btn-arrow-right.svg"
-                            alt=""
-                          />
+                          <img src="/assets/images/sign-in-and-up/icon-btn-arrow-right.svg" alt="" />
                         </button>
                       </div>
 
@@ -78,26 +55,17 @@
                           <ul class="social-network__list">
                             <li>
                               <a href="#!">
-                                <img
-                                  src="/assets/images/sign-in-and-up/icon-google.svg"
-                                  alt="google"
-                                />
+                                <img src="/assets/images/sign-in-and-up/icon-google.svg" alt="google" />
                               </a>
                             </li>
                             <li>
                               <a href="#!">
-                                <img
-                                  src="/assets/images/sign-in-and-up/icon-github.svg"
-                                  alt="google"
-                                />
+                                <img src="/assets/images/sign-in-and-up/icon-github.svg" alt="google" />
                               </a>
                             </li>
                             <li>
                               <a href="#!">
-                                <img
-                                  src="/assets/images/sign-in-and-up/icon-apple.svg"
-                                  alt="app"
-                                />
+                                <img src="/assets/images/sign-in-and-up/icon-apple.svg" alt="app" />
                               </a>
                             </li>
                           </ul>
@@ -114,4 +82,5 @@
     </div>
     <script type="module" src="./main.js"></script>
   </body>
+
 </html>
