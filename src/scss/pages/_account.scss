@@ -1,6 +1,10 @@
 .account {
   &-banner {
     background-color: var(--color-grey-4);
+
+    .img-mobile {
+      display: none;
+    }
   }
   &-content {
     margin-top: -10.6rem;
@@ -300,6 +304,23 @@
         .row-custom {
         }
       }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .account {
+    &-banner {
+      aspect-ratio: 430 / 421;
+      .img-desktop {
+        display: none;
+      }
+      .img-mobile {
+        display: block;
+      }
+    }
+    &-content {
+      margin-top: -32rem;
     }
   }
 }
