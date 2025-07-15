@@ -9,13 +9,6 @@
 
 .account {
   &-content {
-    .col-left {
-      width: 39rem;
-    }
-    .col-right {
-      flex: 1;
-    }
-
     %account-item-background-border {
       border-radius: 2rem;
       border: 0.1rem solid var(--color-grey-5);
@@ -108,15 +101,8 @@
       @extend %account-item-background-border;
       font-family: var(--font-quicksand);
       font-size: 1.6rem;
-      padding: 4.7rem 3.8rem 4.7rem 2.9rem;
+      padding: 4.7rem 2.7rem 4.7rem 2.7rem;
       min-height: 62.8rem;
-
-      .row-custom {
-        gap: 1.6rem;
-      }
-      .col-item {
-        max-width: 37.2rem;
-      }
 
       .overview {
         &-title {
@@ -142,6 +128,7 @@
 
       .account-balance {
         &__line {
+          justify-content: center;
           margin-top: 2.25rem;
           margin-bottom: 4rem;
         }
@@ -227,6 +214,90 @@
             font-size: 1.2rem;
             font-weight: 500;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .account-content .account {
+    &-content {
+      .col-left {
+        width: 39rem;
+      }
+      .col-right {
+        flex: 1;
+      }
+
+      &__overview {
+        .row-custom {
+          flex-wrap: nowrap;
+          gap: 1.6rem;
+        }
+
+        .col-item {
+          max-width: 37.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .account {
+    &-content {
+      &__setting {
+        .account-navigation {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+      }
+
+      &__overview {
+        .row-custom {
+          gap: 3.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .account {
+    &-content {
+      &__wrapper {
+        max-width: 50rem;
+        margin: 0 auto;
+      }
+      .col-left {
+        margin-bottom: 2.8rem;
+      }
+
+      &__setting {
+        padding-bottom: 3.5rem;
+        .info-user__avatar {
+          width: 17.2rem;
+        }
+
+        .account-navigation {
+          padding-left: 4.5rem;
+        }
+        .account-line {
+          margin-top: 2.8rem;
+          margin-bottom: 3.4rem;
+        }
+      }
+
+      &__overview {
+        padding-top: 3.4rem;
+        padding-bottom: 4rem;
+        min-height: inherit;
+
+        .overview-title {
+          margin-bottom: 2.8rem;
+        }
+        .row-custom {
         }
       }
     }
