@@ -110,3 +110,27 @@
     }
   }
 }
+
+@media (max-width: 991.98px) {
+  .product {
+    &-list {
+      --gutter-x: 1.4rem;
+    }
+    &-item {
+      padding: 1rem;
+
+      &__name a,
+      &__price,
+      &__buy-now {
+        font-size: 1.35rem;
+      }
+
+      &__buy-now {
+        height: 3.15rem;
+        .icon svg {
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}
