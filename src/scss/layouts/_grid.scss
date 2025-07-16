@@ -694,6 +694,61 @@
   .order-md-6 {
     order: 6;
   }
+
+  .g-md-1,
+  .gx-md-1 {
+    --gutter-x: calc(var(--spacer) * 0.25);
+  }
+
+  .g-md-2,
+  .gx-md-2 {
+    --gutter-x: calc(var(--spacer) * 0.5);
+  }
+
+  .g-md-3,
+  .gx-md-3 {
+    --gutter-x: calc(var(--spacer));
+  }
+
+  .g-md-4,
+  .gx-md-4 {
+    --gutter-x: calc(var(--spacer) * 1.5);
+  }
+
+  .g-md-5,
+  .gx-md-5 {
+    --gutter-x: calc(var(--spacer) * 3);
+  }
+
+  .g-md-0,
+  .gy-md-0 {
+    --gutter-y: 0;
+  }
+
+  .g-md-1,
+  .gy-md-1 {
+    --gutter-y: calc(var(--spacer) * 0.25);
+  }
+
+  .g-md-2,
+  .gy-md-2 {
+    --gutter-y: calc(var(--spacer) * 0.5);
+  }
+
+  .g-md-3,
+  .gy-md-3 {
+    --gutter-y: calc(var(--spacer));
+  }
+
+  .g-md-4,
+  .gy-md-4 {
+    --gutter-y: calc(var(--spacer) * 1.5);
+  }
+
+  .g-md-5,
+  .gy-md-5 {
+    --gutter-y: calc(var(--spacer) * 3);
+  }
 }
 
 /* SM */

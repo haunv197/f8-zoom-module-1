@@ -180,18 +180,25 @@
     justify-content: space-between;
     height: 100%;
 
-    .showing-result {
-      color: var(--color-secondary);
-      font-family: var(--font-manrope);
-      font-size: 1.472rem;
-      font-weight: 500;
+    .btn-sort-filter {
+      display: none;
+    }
+
+    &-head {
       margin-bottom: 2.4rem;
+
+      .showing-result {
+        color: var(--color-secondary);
+        font-family: var(--font-manrope);
+        font-size: 1.472rem;
+        font-weight: 500;
+      }
     }
   }
 
   .navigation {
     &-page {
-      margin-top: 27rem;
+      margin-top: 4rem;
     }
     &__list {
       display: flex;
@@ -232,6 +239,19 @@
   }
 }
 
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  z-index: 999;
+  display: none;
+
+  label {
+    position: absolute;
+    inset: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   .collection {
     .column-sidebar {
@@ -241,6 +261,170 @@
     .column-collection {
       flex: 1;
       padding-left: 1rem;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .btn-close-modal {
+    display: none;
+  }
+  .product-category__link {
+    .number {
+      display: none;
+    }
+  }
+  .collection__product-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .collection {
+    margin-bottom: 0;
+
+    &__product-menu {
+      display: flex;
+      gap: 1.2rem;
+      margin-bottom: 2.5rem;
+
+      .btn-show-category {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 4.4rem;
+        height: 2rem;
+        border-radius: 10rem;
+        background: var(--color-primary);
+        cursor: pointer;
+      }
+
+      .breadcrumb {
+        display: flex;
+        color: var(--color-placeholder);
+        font-family: var(--font-manrope);
+        font-size: 1.4rem;
+        font-weight: 500;
+        gap: 2rem;
+
+        a {
+          position: relative;
+
+          &:hover {
+            color: var(--color-primary);
+          }
+
+          &::after {
+            content: ">";
+            position: absolute;
+            right: -1.25rem;
+          }
+        }
+
+        span {
+          color: var(--color-secondary);
+        }
+      }
+    }
+
+    &__product-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .btn-sort-filter {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--color-secondary);
+        font-family: var(--font-manrope);
+        font-size: 1.1953rem;
+        font-weight: 500;
+        border: 0.1rem solid var(--color-grey-5);
+        padding: 0.65rem 1rem;
+      }
+    }
+
+    &__wrapper {
+      > .row {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .sidebar {
+      &__item {
+        display: none;
+      }
+
+      &-banner {
+        margin-top: 10.8rem;
+        &__title {
+          max-width: 100%;
+          margin-bottom: 2.7rem;
+        }
+        .banner-btn-view-all {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .product-category {
+      &--mobile {
+        position: fixed;
+        top: 1.9rem;
+        z-index: 999;
+        min-width: 34.1rem;
+        border-radius: 2rem;
+        background: var(--color-white);
+        left: 1.2rem;
+        z-index: 1000;
+        display: none;
+
+        .sidebar__title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      &__link {
+        justify-content: space-between;
+        .number {
+          color: var(--color-placeholder);
+        }
+        &:hover .number {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    .btn-close-modal {
+      cursor: pointer;
+    }
+
+    #toggle-product-category-mobile:checked ~ .product-category {
+      &--mobile {
+        display: block;
+      }
+    }
+    #toggle-product-category-mobile:checked ~ .overlay {
+      display: block;
+    }
+
+    .navigation {
+      &__list {
+        gap: 1.65rem;
+      }
+
+      &__item {
+        .number {
+          width: 3.2rem;
+          height: 3.2rem;
+          font-size: 1.8rem;
+        }
+        .icon svg {
+          width: 1.6rem;
+        }
+      }
     }
   }
 }
