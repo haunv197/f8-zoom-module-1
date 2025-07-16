@@ -1,3 +1,9 @@
+.payment-page {
+  header {
+    display: none;
+  }
+}
+
 .online-payment {
   padding-top: 12.4rem;
   background: url("/assets/images/background-online-payment.png") center / cover
@@ -140,6 +146,7 @@
 @media (max-width: 991.98px) {
   .online-payment {
     padding-top: 5.6rem;
+    min-height: auto;
 
     &__title {
       font-size: 2.7236rem;
