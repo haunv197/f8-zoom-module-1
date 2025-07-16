@@ -2,6 +2,7 @@
 $spacing-section: 4rem;
 
 .home-banner {
+  margin-top: 2rem;
   margin-bottom: $spacing-section;
 
   &__wrapper {
@@ -141,7 +142,7 @@ $spacing-section: 4rem;
   }
 }
 
-.product-category {
+.product-by-category {
   margin-bottom: $spacing-section;
 
   .banner {
