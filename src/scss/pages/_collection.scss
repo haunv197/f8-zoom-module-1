@@ -1,11 +1,246 @@
 .collection {
+  margin-top: 2.7rem;
+  margin-bottom: 10.5rem;
+
+  .sidebar {
+    font-family: var(--font-quicksand);
+
+    %input-checkbox {
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 0.3rem;
+      border-color: var(--color-black-2);
+
+      &:checked {
+        accent-color: var(--color-primary);
+      }
+    }
+
+    &__item {
+      margin-bottom: 2.4rem;
+      border-radius: 0.2rem;
+      border: 0.1rem solid var(--color-grey-5);
+      background: var(--color-white);
+    }
+
+    &__title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.556;
+      padding: 1.2rem 2.2rem;
+      border-bottom: 0.1rem solid var(--color-grey-5);
+    }
+
+    .product-category {
+      padding-top: 1.2rem;
+      padding-bottom: 1.9rem;
+
+      &__link {
+        display: flex;
+        color: var(--color-black-2);
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2;
+        padding: 0 2.2rem;
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    .price-filter {
+      padding: 3.2rem 1.8rem 4.1rem 1.8rem;
+      &__input {
+        input[type="range"] {
+          width: 100%;
+          accent-color: var(--color-primary);
+        }
+      }
+
+      &__text {
+        padding-top: 2.728rem;
+        padding-bottom: 2.728rem;
+        color: var(--color-black-2);
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.44675;
+
+        strong {
+          font-family: var(--font-manrope);
+        }
+      }
+
+      .filter-btn {
+        min-width: 8.76rem;
+        color: var(--color-white);
+        font-family: var(--font-manrope);
+        font-size: 1.5rem;
+        font-weight: 600;
+        background-color: var(--color-primary);
+        border-radius: 0.4134rem;
+        padding: 0.45rem;
+      }
+    }
+
+    .evaluate {
+      padding: 3.3rem 2.3rem 4.6rem 2.3rem;
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      &__item {
+        display: flex;
+        align-items: center;
+
+        &-label {
+          display: inline-flex;
+        }
+
+        &-checkbox {
+          @extend %input-checkbox;
+        }
+
+        &-star {
+          padding-left: 1.2rem;
+          padding-right: 1.6rem;
+          display: flex;
+          gap: 0.8rem;
+
+          span {
+            display: flex;
+          }
+        }
+
+        &-number {
+          color: var(--color-text-4);
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 2rem;
+        }
+      }
+    }
+
+    .brand {
+      padding: 3.4rem 2.3rem 7.8rem 2.3rem;
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+      }
+      &__item {
+        color: var(--color-grey);
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.25;
+
+        &-label {
+          display: flex;
+          align-items: center;
+          width: max-content;
+          gap: 1.6rem;
+        }
+
+        &-checkbox {
+          @extend %input-checkbox;
+        }
+      }
+    }
+
+    &-banner {
+      margin-top: 3.4rem;
+      border-radius: 2.5rem;
+      background: #ffdacd;
+      text-align: center;
+      padding: 4.4rem 0.5rem 5.7rem 0.5rem;
+
+      &__title {
+        color: #951418;
+        text-align: center;
+        font-size: 2.5176rem;
+        font-weight: 600;
+        max-width: 18.9rem;
+        margin: 0 auto;
+        margin-bottom: 3.3rem;
+      }
+
+      .banner-btn-view-all {
+        padding: 0.75rem 2.1rem;
+        border-color: transparent;
+      }
+    }
+  }
+
   &__product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
     .showing-result {
       color: var(--color-secondary);
       font-family: var(--font-manrope);
       font-size: 1.472rem;
       font-weight: 500;
       margin-bottom: 2.4rem;
+    }
+  }
+
+  .navigation {
+    &-page {
+      margin-top: 27rem;
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.3rem;
+      font-family: var(--font-quicksand);
+    }
+    &__item {
+      .number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 4.4rem;
+        height: 4.4rem;
+        color: var(--color-text-4);
+        font-size: 2.5667rem;
+        font-weight: 600;
+        border-radius: 50%;
+        background-color: var(--color-border-1);
+
+        &:hover,
+        &.active {
+          background-color: var(--color-primary);
+          color: var(--color-white);
+        }
+      }
+
+      .icon {
+        display: flex;
+        &:hover {
+          svg path {
+            fill: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .collection {
+    .column-sidebar {
+      max-width: 28.9rem;
+    }
+
+    .column-collection {
+      flex: 1;
+      padding-left: 1rem;
     }
   }
 }
