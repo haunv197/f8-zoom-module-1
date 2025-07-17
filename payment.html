@@ -10,67 +10,317 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/f8-zoom-module-1/assets/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/f8-zoom-module-1/assets/favicons/favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <script type="module" crossorigin src="/f8-zoom-module-1/assets/main-DO7dkCH3.js"></script>
-  <link rel="stylesheet" crossorigin href="/f8-zoom-module-1/assets/main-7L2modFn.css">
+  <script type="module" crossorigin src="/f8-zoom-module-1/assets/main-Dxj4Zsli.js"></script>
+  <link rel="stylesheet" crossorigin href="/f8-zoom-module-1/assets/main-B_UQ0Uh5.css">
 </head>
 
   <body>
-    <div class="wrapper">
-      <main class="main online-payment">
-        <div class="container">
-          <div class="online-payment__wrapper">
-            <h1 class="online-payment__title">ONLINE PAYMENT</h1>
-            <form action="" class="online-payment__form">
-              <div class="form-item form-item--info-user">
-                <h3 class="form-item__title">Thông tin vận chuyển và thanh toán</h3>
-                <div class="form-item__form">
-                  <div class="form-group">
-                    <label for="name">Tên</label>
-                    <input type="text" name="name" id="name" placeholder="Name" value="Haunv">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email" placeholder="Email" value="haunvf8@fullstack.edu.vn">
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-item form-item--info-payment">
-                <h3 class="form-item__title">Thông tin thanh toán</h3>
-                <div class="form-item__form">
-                  <div class="form-group">
-                    <label for="card_number">Số thẻ</label>
-                    <input type="text" name="card_number" id="card_number" placeholder="Card number">
-                    <span class="card_number-icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path
-                          d="M19 4C19.7956 4 20.5587 4.31607 21.1213 4.87868C21.6839 5.44129 22 6.20435 22 7V17C22 17.7956 21.6839 18.5587 21.1213 19.1213C20.5587 19.6839 19.7956 20 19 20H5C4.20435 20 3.44129 19.6839 2.87868 19.1213C2.31607 18.5587 2 17.7956 2 17V7C2 6.20435 2.31607 5.44129 2.87868 4.87868C3.44129 4.31607 4.20435 4 5 4H19ZM20 10H4V17C4.00003 17.2449 4.08996 17.4813 4.25272 17.6644C4.41547 17.8474 4.63975 17.9643 4.883 17.993L5 18H19C19.2449 18 19.4813 17.91 19.6644 17.7473C19.8474 17.5845 19.9643 17.3603 19.993 17.117L20 17V10ZM17 13C17.2549 13.0003 17.5 13.0979 17.6854 13.2728C17.8707 13.4478 17.9822 13.687 17.9972 13.9414C18.0121 14.1958 17.9293 14.4464 17.7657 14.6418C17.6021 14.8373 17.3701 14.9629 17.117 14.993L17 15H14C13.7451 14.9997 13.5 14.9021 13.3146 14.7272C13.1293 14.5522 13.0178 14.313 13.0028 14.0586C12.9879 13.8042 13.0707 13.5536 13.2343 13.3582C13.3979 13.1627 13.6299 13.0371 13.883 13.007L14 13H17ZM19 6H5C4.73478 6 4.48043 6.10536 4.29289 6.29289C4.10536 6.48043 4 6.73478 4 7V8H20V7C20 6.73478 19.8946 6.48043 19.7071 6.29289C19.5196 6.10536 19.2652 6 19 6Z"
-                          fill="#868686" />
-                      </svg>
-                    </span>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="time">Hết hạn</label>
-                    <input type="text" name="time" id="time" placeholder="MM/YY">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="cvc">Cvc</label>
-                    <input type="text" name="cvc" id="cvc" placeholder="xxx">
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-submit">
-                <button class="btn-submit">Thanh toán</button>
-                <button class="btn-cancel">Huỷ bỏ</button>
-              </div>
-            </form>
-          </div>
+    <div class="wrapper payment-page">
+      <!-- Header -->
+      <header class="header">
+  <!-- Header Top -->
+  <section class="header-top">
+    <div class="container">
+      <div class="header-top__wrapper">
+        <div class="header-top__left">
+          <a href="#!">Về chúng tôi</a>
         </div>
-      </main>
+        <div class="header-top__right">
+          <ul class="list-support">
+            <li>
+              <a href="#!">
+                <span class="text">Trung tâm hỗ trợ</span>
+                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M1.53711 1.63429L6.26854 6.36572L11 1.63429" stroke="white" stroke-width="1.472"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <span class="text">ENG</span>
+                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M0.999969 1.63429L5.7314 6.36572L10.4628 1.63429" stroke="white" stroke-width="1.472"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.46282 1.33325C12.1448 1.33325 15.1295 4.31792 15.1295 7.99992C15.1318 9.53851 14.5997 11.0301 13.6241 12.2199L13.6375 12.2346L13.5495 12.3093C12.9242 13.0487 12.1451 13.6427 11.2666 14.0499C10.388 14.457 9.43114 14.6675 8.46282 14.6666C6.49615 14.6666 4.72948 13.8153 3.50948 12.4619L3.37615 12.3086L3.28815 12.2353L3.30148 12.2193C2.32609 11.0297 1.79401 9.53828 1.79615 7.99992C1.79615 4.31792 4.78082 1.33325 8.46282 1.33325ZM8.46282 11.3333C7.22282 11.3333 6.10215 11.7279 5.26748 12.2706C6.18921 12.9619 7.31066 13.3348 8.46282 13.3333C9.61497 13.3348 10.7364 12.9619 11.6581 12.2706C10.7043 11.6595 9.59556 11.3343 8.46282 11.3333ZM8.46282 2.66659C7.45917 2.66656 6.47587 2.94973 5.62596 3.48355C4.77605 4.01738 4.09402 4.78018 3.65826 5.6843C3.22249 6.58842 3.05069 7.59714 3.16258 8.59454C3.27448 9.59193 3.66554 10.5375 4.29082 11.3226C5.37148 10.5473 6.84615 9.99992 8.46282 9.99992C10.0795 9.99992 11.5541 10.5473 12.6348 11.3226C13.2601 10.5375 13.6512 9.59193 13.763 8.59454C13.8749 7.59714 13.7031 6.58842 13.2674 5.6843C12.8316 4.78018 12.1496 4.01738 11.2997 3.48355C10.4498 2.94973 9.46647 2.66656 8.46282 2.66659ZM8.46282 3.99992C9.17006 3.99992 9.84834 4.28087 10.3484 4.78097C10.8485 5.28106 11.1295 5.95934 11.1295 6.66659C11.1295 7.37383 10.8485 8.05211 10.3484 8.5522C9.84834 9.0523 9.17006 9.33325 8.46282 9.33325C7.75557 9.33325 7.07729 9.0523 6.5772 8.5522C6.0771 8.05211 5.79615 7.37383 5.79615 6.66659C5.79615 5.95934 6.0771 5.28106 6.5772 4.78097C7.07729 4.28087 7.75557 3.99992 8.46282 3.99992ZM8.46282 5.33325C8.10919 5.33325 7.77006 5.47373 7.52001 5.72378C7.26996 5.97382 7.12948 6.31296 7.12948 6.66659C7.12948 7.02021 7.26996 7.35935 7.52001 7.60939C7.77006 7.85944 8.10919 7.99992 8.46282 7.99992C8.81644 7.99992 9.15558 7.85944 9.40562 7.60939C9.65567 7.35935 9.79615 7.02021 9.79615 6.66659C9.79615 6.31296 9.65567 5.97382 9.40562 5.72378C9.15558 5.47373 8.81644 5.33325 8.46282 5.33325Z"
+                      fill="white" />
+                  </svg>
+                </span>
+                <span class="text">Tài khoản</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Header Mid -->
+  <section class="header-mid">
+    <div class="container">
+      <div class="header-mid__wrapper">
+        <a href="/" class="header-mid__logo">
+          <img src="/f8-zoom-module-1/assets/images/logo.png" alt="Logo" />
+        </a>
+        <div class="header-mid__filter">
+          <form action="" class="form-search">
+            <div class="select-all">
+              <span class="text">All categories</span>
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                  <path d="M1.14369 1.65993L5.87512 6.39136L10.6065 1.65993" stroke="#AEAEAE" stroke-width="1.472"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+
+            <div class="form-group-search">
+              <input class="input-search" type="search" placeholder="Search" name="search" />
+              <button class="btn-search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.7056 14.3957C17.7982 12.9871 18.3131 11.2151 18.1456 9.44034C17.9781 7.66556 17.1408 6.02124 15.8039 4.84191C14.4671 3.66259 12.7312 3.03684 10.9494 3.09198C9.16758 3.14712 7.47369 3.87899 6.21233 5.13872C4.94988 6.39932 4.21561 8.09386 4.15915 9.87704C4.1027 11.6602 4.72831 13.3978 5.90849 14.7357C7.08868 16.0737 8.73462 16.9112 10.5109 17.0778C12.2872 17.2443 14.0601 16.7272 15.4684 15.632L15.5061 15.6714L19.2229 19.3891C19.3043 19.4705 19.4009 19.5351 19.5073 19.5791C19.6137 19.6232 19.7277 19.6459 19.8428 19.6459C19.9579 19.6459 20.0719 19.6232 20.1783 19.5791C20.2846 19.5351 20.3813 19.4705 20.4627 19.3891C20.5441 19.3077 20.6087 19.211 20.6527 19.1047C20.6968 18.9983 20.7195 18.8843 20.7195 18.7692C20.7195 18.654 20.6968 18.54 20.6527 18.4337C20.6087 18.3273 20.5441 18.2307 20.4627 18.1493L16.745 14.4325L16.7056 14.3957ZM14.8866 6.37853C15.3813 6.86523 15.7748 7.44507 16.0442 8.08459C16.3137 8.72411 16.4539 9.41066 16.4568 10.1046C16.4596 10.7986 16.325 11.4863 16.0607 12.128C15.7964 12.7697 15.4077 13.3527 14.917 13.8434C14.4263 14.3341 13.8433 14.7228 13.2016 14.9871C12.5599 15.2514 11.8722 15.386 11.1782 15.3831C10.4843 15.3803 9.79772 15.2401 9.1582 14.9706C8.51868 14.7011 7.93885 14.3077 7.45214 13.813C6.4795 12.8244 5.93691 11.4915 5.94255 10.1046C5.9482 8.71778 6.50163 7.38934 7.48229 6.40868C8.46295 5.42802 9.79139 4.87459 11.1782 4.86894C12.5651 4.86329 13.898 5.40589 14.8866 6.37853Z"
+                    fill="#5C5C5C" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Header Bottom -->
+  <section class="header-bottom">
+    <div class="container">
+      <div class="header-bottom__wrapper">
+        <nav class="header-bottom__nav">
+  <ul class="nav-list">
+    <li>
+      <a href="/">Trang chủ</a>
+    </li>
+    <li>
+      <a href="#!">
+        <span>Thẻ điện thoại</span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+            <path d="M1.08777 1.63429L5.8192 6.36572L10.5506 1.63429" stroke="#787777" stroke-width="1.472"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        <span>Nạp game</span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+            <path d="M1.08777 1.63429L5.8192 6.36572L10.5506 1.63429" stroke="#787777" stroke-width="1.472"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+          <div class="header-bottom__hotline">
+            <a href="tel:19200 10800" class="d-flex">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.6279 10.4381C12.0333 10.4381 11.4581 10.3414 10.9215 10.1673C10.8374 10.139 10.7471 10.1349 10.6607 10.1554C10.5744 10.1759 10.4956 10.2202 10.4332 10.2834L9.67427 11.2357C8.30621 10.5831 7.02516 9.35037 6.34354 7.93396L7.2862 7.13149C7.41672 6.99613 7.4554 6.8076 7.40222 6.63841C7.22336 6.10182 7.13151 5.52655 7.13151 4.93195C7.13151 4.67091 6.91397 4.45337 6.65293 4.45337H4.98031C4.71926 4.45337 4.40504 4.56939 4.40504 4.93195C4.40504 9.42288 8.14185 13.1548 12.6279 13.1548C12.9712 13.1548 13.1065 12.8503 13.1065 12.5844V10.9166C13.1065 10.6556 12.889 10.4381 12.6279 10.4381Z"
+                  fill="#5C5C5C" />
+                <circle cx="9.04583" cy="8.51421" r="7.88571" stroke="#5C5C5C" stroke-width="1.05143" />
+              </svg>
+            </a>
+            <span> Hotline: 19200 10800 </span>
+          </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+
+<!-- Header Mobile -->
+<section class="header-mobile-top">
+  <div class="container">
+    <div class="header-mobile-top__wrapper">
+      <span class="header-mobile-top__menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <g clip-path="url(#clip0_4676_6783)">
+            <path
+              d="M5.81875 4.3625H10.1812V0H5.81875V4.3625ZM11.6375 0V4.3625H16V0H11.6375ZM0 4.3625H4.3625V0H0V4.3625ZM5.81875 10.1812H10.1812V5.81875H5.81875V10.1812ZM11.6375 10.1812H16V5.81875H11.6375V10.1812ZM0 10.1812H4.3625V5.81875H0V10.1812ZM5.81875 16H10.1812V11.6375H5.81875V16ZM11.6375 16H16V11.6375H11.6375V16ZM0 16H4.3625V11.6375H0V16Z"
+              fill="#FF9E7B" />
+          </g>
+          <defs>
+            <clipPath id="clip0_4676_6783">
+              <rect width="16" height="16" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </span>
+
+      <div class="header-mobile-top__hotline">
+        <a href="tel:19200 10800" class="d-flex">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.02177 7.87248C8.59763 7.87248 8.18729 7.80352 7.80453 7.67938C7.74455 7.65918 7.6801 7.65622 7.61853 7.67085C7.55696 7.68549 7.50073 7.71711 7.45625 7.76214L6.91487 8.44145C5.93901 7.97593 5.02522 7.09662 4.53901 6.08627L5.21142 5.51386C5.30453 5.41731 5.33211 5.28283 5.29418 5.16214C5.1666 4.77938 5.10108 4.36903 5.10108 3.94489C5.10108 3.75869 4.94591 3.60352 4.7597 3.60352H3.56659C3.38039 3.60352 3.15625 3.68627 3.15625 3.94489C3.15625 7.14834 5.82177 9.81041 9.02177 9.81041C9.2666 9.81041 9.36315 9.59317 9.36315 9.40352V8.21386C9.36315 8.02765 9.20798 7.87248 9.02177 7.87248Z"
+              fill="white" />
+            <circle cx="6.4668" cy="6.5" r="5.47429" stroke="white" stroke-width="1.05143" />
+          </svg>
+        </a>
+        <span> Hotline: 19200 10800 </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="header-mobile-bottom">
+  <div class="container">
+    <div class="header-mobile-bottom__wrapper">
+      <label class="header-mobile-bottom__menu d-flex" for="toggle-header-mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z"
+            fill="#ED5A25" />
+        </svg>
+      </label>
+
+      <div class="header-mobile-bottom__right">
+        <a href="#!" class="d-flex">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.2659 12.754C16.3051 11.4143 16.7948 9.72902 16.6355 8.04104C16.4762 6.35306 15.6798 4.78917 14.4084 3.66753C13.1369 2.54589 11.486 1.95075 9.79129 2.00319C8.09662 2.05563 6.48559 2.75171 5.28593 3.94982C4.08522 5.14876 3.38687 6.76042 3.33318 8.45637C3.27948 10.1523 3.87449 11.8049 4.99695 13.0774C6.11941 14.3499 7.68484 15.1465 9.37424 15.3049C11.0636 15.4633 12.7498 14.9715 14.0893 13.9298L14.1251 13.9673L17.6601 17.5032C17.7375 17.5806 17.8294 17.642 17.9306 17.6839C18.0318 17.7258 18.1402 17.7474 18.2497 17.7474C18.3592 17.7474 18.4676 17.7258 18.5688 17.6839C18.6699 17.642 18.7618 17.5806 18.8393 17.5032C18.9167 17.4257 18.9781 17.3338 19.02 17.2326C19.0619 17.1315 19.0835 17.0231 19.0835 16.9136C19.0835 16.8041 19.0619 16.6956 19.02 16.5945C18.9781 16.4933 18.9167 16.4014 18.8393 16.324L15.3034 12.789L15.2659 12.754ZM13.5359 5.12899C14.0064 5.59189 14.3806 6.14336 14.6369 6.7516C14.8932 7.35984 15.0266 8.01281 15.0293 8.67284C15.0319 9.33287 14.9039 9.9869 14.6526 10.5972C14.4012 11.2075 14.0316 11.762 13.5648 12.2287C13.0981 12.6954 12.5436 13.0651 11.9333 13.3165C11.323 13.5678 10.669 13.6958 10.0089 13.6932C9.34891 13.6905 8.69595 13.5571 8.08771 13.3008C7.47947 13.0445 6.92799 12.6703 6.46509 12.1998C5.54003 11.2596 5.02397 9.99185 5.02934 8.67284C5.03472 7.35382 5.56107 6.09036 6.49377 5.15766C7.42646 4.22497 8.68993 3.69861 10.0089 3.69324C11.328 3.68787 12.5957 4.20392 13.5359 5.12899Z"
+              fill="#5C5C5C" />
+          </svg>
+        </a>
+        <a href="#!" class="d-flex">
+          <svg xmlns=" http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path
+              d="M10.0002 12.3564C11.5851 12.3565 13.1051 12.9859 14.2258 14.1064C15.1827 15.0633 15.78 16.3118 15.9348 17.6426H4.06567C4.22047 16.3118 4.81687 15.0633 5.77368 14.1064C6.89451 12.9857 8.41521 12.3564 10.0002 12.3564ZM10.0002 1.52344C12.3815 1.52361 14.3098 3.45169 14.3098 5.83301C14.3098 8.21432 12.3815 10.1424 10.0002 10.1426C7.61882 10.1426 5.6897 8.21443 5.6897 5.83301C5.6897 3.45158 7.61882 1.52344 10.0002 1.52344Z"
+              stroke="#5C5C5C" stroke-width="1.38" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<input type="checkbox" hidden id="toggle-header-mobile-nav">
+<label class="btn-overlay" for="toggle-header-mobile-nav"></label>
+
+<section class="header-mobile-nav">
+  <div class="header-mobile-nav__head">
+    <a href="/" class="header-mobile-nav__logo">
+      <img src="/f8-zoom-module-1/assets/images/logo.png" alt="Logo" />
+    </a>
+    <label class="btn-close-nav" for="toggle-header-mobile-nav">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <path d="M1 17.1006L9 9.10059M9 9.10059L17 1.10059M9 9.10059L1 1.10059M9 9.10059L17 17.1006" stroke="#787777"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </label>
+  </div>
+  <nav class="header-bottom__nav">
+  <ul class="nav-list">
+    <li>
+      <a href="/">Trang chủ</a>
+    </li>
+    <li>
+      <a href="#!">
+        <span>Thẻ điện thoại</span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+            <path d="M1.08777 1.63429L5.8192 6.36572L10.5506 1.63429" stroke="#787777" stroke-width="1.472"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        <span>Nạp game</span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+            <path d="M1.08777 1.63429L5.8192 6.36572L10.5506 1.63429" stroke="#787777" stroke-width="1.472"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</section>
+
+<!-- End Header Mobile -->
+
+        <main class="main online-payment">
+          <div class="container">
+            <div class="online-payment__wrapper">
+              <h1 class="online-payment__title">ONLINE PAYMENT</h1>
+              <form action="" class="online-payment__form">
+                <div class="form-item form-item--info-user">
+                  <h3 class="form-item__title">Thông tin vận chuyển và thanh toán</h3>
+                  <div class="form-item__form">
+                    <div class="form-group">
+                      <label for="name">Tên</label>
+                      <input type="text" name="name" id="name" placeholder="Name" value="Haunv">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">E-mail</label>
+                      <input type="text" name="email" id="email" placeholder="Email" value="haunvf8@fullstack.edu.vn">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-item form-item--info-payment">
+                  <h3 class="form-item__title">Thông tin thanh toán</h3>
+                  <div class="form-item__form">
+                    <div class="form-group">
+                      <label for="card_number">Số thẻ</label>
+                      <input type="text" name="card_number" id="card_number" placeholder="Card number">
+                      <span class="card_number-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M19 4C19.7956 4 20.5587 4.31607 21.1213 4.87868C21.6839 5.44129 22 6.20435 22 7V17C22 17.7956 21.6839 18.5587 21.1213 19.1213C20.5587 19.6839 19.7956 20 19 20H5C4.20435 20 3.44129 19.6839 2.87868 19.1213C2.31607 18.5587 2 17.7956 2 17V7C2 6.20435 2.31607 5.44129 2.87868 4.87868C3.44129 4.31607 4.20435 4 5 4H19ZM20 10H4V17C4.00003 17.2449 4.08996 17.4813 4.25272 17.6644C4.41547 17.8474 4.63975 17.9643 4.883 17.993L5 18H19C19.2449 18 19.4813 17.91 19.6644 17.7473C19.8474 17.5845 19.9643 17.3603 19.993 17.117L20 17V10ZM17 13C17.2549 13.0003 17.5 13.0979 17.6854 13.2728C17.8707 13.4478 17.9822 13.687 17.9972 13.9414C18.0121 14.1958 17.9293 14.4464 17.7657 14.6418C17.6021 14.8373 17.3701 14.9629 17.117 14.993L17 15H14C13.7451 14.9997 13.5 14.9021 13.3146 14.7272C13.1293 14.5522 13.0178 14.313 13.0028 14.0586C12.9879 13.8042 13.0707 13.5536 13.2343 13.3582C13.3979 13.1627 13.6299 13.0371 13.883 13.007L14 13H17ZM19 6H5C4.73478 6 4.48043 6.10536 4.29289 6.29289C4.10536 6.48043 4 6.73478 4 7V8H20V7C20 6.73478 19.8946 6.48043 19.7071 6.29289C19.5196 6.10536 19.2652 6 19 6Z"
+                            fill="#868686" />
+                        </svg>
+                      </span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="time">Hết hạn</label>
+                      <input type="text" name="time" id="time" placeholder="MM/YY">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="cvc">Cvc</label>
+                      <input type="text" name="cvc" id="cvc" placeholder="xxx">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-submit">
+                  <button class="btn-submit">Thanh toán</button>
+                  <button class="btn-cancel">Huỷ bỏ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
     </div>
   </body>
 
