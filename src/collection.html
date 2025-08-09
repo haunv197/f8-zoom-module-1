@@ -2,467 +2,452 @@
 <html lang="en">
 <%- include("./partials/head.ejs") %>
 
-  <body>
-    <div class="wrapper">
-      <!-- Header -->
-      <%- include("./partials/header.ejs") %>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <%- include("./partials/header.ejs") %>
 
-        <main class="main collection">
-          <div class="container">
-            <div class="collection__wrapper">
-              <div class="row">
-                <!-- Sidebar -->
-                <div class="col-3 col-md-12 column-sidebar">
-                  <aside class="sidebar">
+    <main class="main collection">
+      <div class="container">
+        <div class="collection__wrapper">
+          <div class="row">
+            <!-- Sidebar -->
+            <div class="col-3 col-md-12 column-sidebar">
+              <aside class="sidebar">
 
-                    <input type="checkbox" hidden id="toggle-product-category-mobile">
+                <input type="checkbox" hidden id="toggle-product-category-mobile">
 
-                    <div class="overlay">
-                      <label for="toggle-product-category-mobile"></label>
-                    </div>
-
-                    <!-- Danh mục sản phẩm -->
-                    <div class="sidebar__item product-category--mobile">
-                      <h3 class="sidebar__title">
-                        <span>Danh mục sản phẩm</span>
-
-                        <label for="toggle-product-category-mobile">
-                          <span class="btn-close-modal d-flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"
-                              fill="none">
-                              <path d="M1 17.5L9 9.5M9 9.5L17 1.5M9 9.5L1 1.5M9 9.5L17 17.5" stroke="#787777"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                          </span>
-                        </label>
-
-                      </h3>
-
-                      <nav class="product-category">
-                        <ul class="product-category__list">
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Mobile Game Cards</span>
-                              <span class="number">5</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Game Cards</span>
-                              <span class="number">10</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Payment Cards</span>
-                              <span class="number">12</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Gift Cards</span>
-                              <span class="number">10</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Game Console</span>
-                              <span class="number">10</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Game CD-Key</span>
-                              <span class="number">30</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Video Streaming</span>
-                              <span class="number">10</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Music</span>
-                              <span class="number">49</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Shopping</span>
-                              <span class="number">33</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Tools</span>
-                              <span class="number">34</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Software</span>
-                              <span class="number">56</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Social App</span>
-                              <span class="number">10</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Freebie Codes</span>
-                              <span class="number">01</span>
-                            </a>
-                          </li>
-                          <li class="product-category__item">
-                            <a href="#!" class="product-category__link">
-                              <span>Subscript</span>
-                              <span class="number">34</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-
-                    <!-- Khoảng giá -->
-                    <div class="sidebar__item">
-                      <h3 class="sidebar__title">Khoảng giá</h3>
-
-                      <div class="price-filter">
-                        <div class="price-filter__input">
-                          <input type="range" min="0" max="1000000" step="50000" value="1000000">
-                        </div>
-                        <p class="price-filter__text">Price: <strong>500.000 - 1.000.000</strong></p>
-                        <button class="filter-btn">Lọc</button>
-                      </div>
-
-                    </div>
-
-                    <!-- Đánh giá -->
-                    <div class="sidebar__item">
-                      <h3 class="sidebar__title">Đánh giá</h3>
-
-                      <div class="evaluate">
-                        <ul class="evaluate__list">
-                          <li class="evaluate__item">
-                            <label class="evaluate__item-label">
-                              <input type="checkbox" class="evaluate__item-checkbox">
-
-                              <div class="evaluate__item-star">
-                                <%- include("./icon/star.ejs") %>
-                                  <%- include("./icon/star.ejs") %>
-                                    <%- include("./icon/star.ejs") %>
-                                      <%- include("./icon/star.ejs") %>
-                                        <%- include("./icon/star.ejs") %>
-                              </div>
-                              <span class="evaluate__item-number"> (120k)</span>
-                            </label>
-                          </li>
-
-                          <li class="evaluate__item">
-                            <label class="evaluate__item-label">
-                              <input type="checkbox" class="evaluate__item-checkbox">
-                              <div class="evaluate__item-star">
-                                <%- include("./icon/star.ejs") %>
-                                  <%- include("./icon/star.ejs") %>
-                                    <%- include("./icon/star.ejs") %>
-                                      <%- include("./icon/star.ejs") %>
-                                        <%- include("./icon/star-none.ejs") %>
-                              </div>
-                              <span class="evaluate__item-number"> (120k)</span>
-                            </label>
-                          </li>
-
-                          <li class="evaluate__item">
-                            <label class="evaluate__item-label">
-                              <input type="checkbox" class="evaluate__item-checkbox">
-                              <div class="evaluate__item-star">
-                                <%- include("./icon/star.ejs") %>
-                                  <%- include("./icon/star.ejs") %>
-                                    <%- include("./icon/star.ejs") %>
-                                      <%- include("./icon/star-none.ejs") %>
-                                        <%- include("./icon/star-none.ejs") %>
-                              </div>
-                              <span class="evaluate__item-number"> (120k)</span>
-                            </label>
-                          </li>
-
-                          <li class="evaluate__item">
-                            <label class="evaluate__item-label">
-                              <input type="checkbox" class="evaluate__item-checkbox">
-                              <div class="evaluate__item-star">
-                                <%- include("./icon/star.ejs") %>
-                                  <%- include("./icon/star.ejs") %>
-                                    <%- include("./icon/star-none.ejs") %>
-                                      <%- include("./icon/star-none.ejs") %>
-                                        <%- include("./icon/star-none.ejs") %>
-                              </div>
-                              <span class="evaluate__item-number"> (120k)</span>
-                            </label>
-                          </li>
-
-                          <li class="evaluate__item">
-                            <label class="evaluate__item-label">
-                              <input type="checkbox" class="evaluate__item-checkbox">
-                              <div class="evaluate__item-star">
-                                <%- include("./icon/star.ejs") %>
-                                  <%- include("./icon/star-none.ejs") %>
-                                    <%- include("./icon/star-none.ejs") %>
-                                      <%- include("./icon/star-none.ejs") %>
-                                        <%- include("./icon/star-none.ejs") %>
-                              </div>
-                              <span class="evaluate__item-number"> (120k)</span>
-                            </label>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <!-- Thương hiệu -->
-                    <div class="sidebar__item">
-                      <h3 class="sidebar__title">Thương hiệu</h3>
-
-                      <div class="brand">
-                        <ul class="brand__list">
-                          <%- include('./components/brand-item',{name:'Apple'}) %>
-                            <%- include('./components/brand-item',{name:'Google'}) %>
-                              <%- include('./components/brand-item',{name:'Microsoft'}) %>
-                                <%- include('./components/brand-item',{name:'Amazon'}) %>
-                                  <%- include('./components/brand-item',{name:'McDonald \'s'}) %>
-                                    <%- include('./components/brand-item',{name:'Visa'}) %>
-                                      <%- include('./components/brand-item',{name:'Tencent'}) %>
-                                        <%- include('./components/brand-item',{name:'Louis Vuitton'}) %>
-                                          <%- include('./components/brand-item',{name:'MasterCard'}) %>
-                                            <%- include('./components/brand-item',{name:'Coca-Cola'}) %>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="sidebar-banner">
-                      <div class="sidebar-banner__img">
-                        <img src="/assets/images/collection-banner-img.png" alt="">
-                      </div>
-                      <h3 class="sidebar-banner__title">Card voucher hot news</h3>
-                      <div class="d-flex justify-content-center">
-                        <a href="#!" class="banner-btn-view-all">
-                          <span class="text">
-                            View all
-                          </span>
-                          <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
-                              fill="none">
-                              <path
-                                d="M2.58438 6.45203L7.62439 6.45203L5.42249 8.65393C5.24652 8.82991 5.24652 9.11868 5.42249 9.29465C5.46423 9.33648 5.51381 9.36967 5.5684 9.39231C5.62298 9.41495 5.6815 9.42661 5.74059 9.42661C5.79969 9.42661 5.8582 9.41495 5.91278 9.39231C5.96737 9.36967 6.01695 9.33648 6.05869 9.29465L9.03217 6.32118C9.074 6.27943 9.10718 6.22985 9.12983 6.17527C9.15247 6.12068 9.16412 6.06217 9.16412 6.00307C9.16412 5.94398 9.15247 5.88546 9.12983 5.83088C9.10718 5.7763 9.074 5.72671 9.03217 5.68497L6.05869 2.71149C6.01692 2.66972 5.96733 2.63658 5.91275 2.61398C5.85817 2.59137 5.79967 2.57973 5.74059 2.57973C5.68151 2.57973 5.62302 2.59137 5.56843 2.61398C5.51385 2.63658 5.46426 2.66972 5.42249 2.71149C5.38071 2.75327 5.34758 2.80286 5.32497 2.85744C5.30236 2.91202 5.29073 2.97052 5.29073 3.0296C5.29073 3.08868 5.30236 3.14717 5.32497 3.20175C5.34758 3.25633 5.38071 3.30593 5.42249 3.3477L7.62439 5.54961L2.58438 5.54961C2.33621 5.54961 2.13317 5.75265 2.13317 6.00082C2.13317 6.24898 2.33621 6.45203 2.58438 6.45203Z"
-                                fill="#ED5B1F"></path>
-                            </svg>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </aside>
+                <div class="overlay">
+                  <label for="toggle-product-category-mobile"></label>
                 </div>
 
-                <div class="col-9 col-md-12 column-collection">
-                  <div class="collection__product">
-                    <!-- Product List -->
-                    <div>
-                      <div class="collection__product-menu">
-                        <label for="toggle-product-category-mobile">
-                          <span class="btn-show-category">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"
-                              fill="none">
-                              <path d="M11.3334 1H0.666707M9.33337 5H0.666707M7.33337 9H0.666707" stroke="white"
-                                stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                          </span>
-                        </label>
+                <!-- Danh mục sản phẩm -->
+                <div class="sidebar__item product-category--mobile">
+                  <h3 class="sidebar__title">
+                    <span>Danh mục sản phẩm</span>
 
-                        <ul class="breadcrumb">
-                          <li>
-                            <a href="#!">
-                              Card Voucher
-                            </a>
-                          </li>
-                          <ul>
-                            <li>
-                              <span>Mobile card</span>
-                            </li>
-                          </ul>
-                        </ul>
-                      </div>
+                    <label for="toggle-product-category-mobile">
+                      <span class="btn-close-modal d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                          <path d="M1 17.5L9 9.5M9 9.5L17 1.5M9 9.5L1 1.5M9 9.5L17 17.5" stroke="#787777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </label>
 
-                      <div class="collection__product-head">
-                        <p class="showing-result">
-                          Showing 1-12
-                        </p>
-                        <button class="btn-sort-filter">
-                          <span>Sort by latest</span>
-                          <span class="d-flex"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"
-                              viewBox="0 0 10 6" fill="none">
-                              <path d="M0.81958 1.31907L4.66164 5.16113L8.5037 1.31907" stroke="#AEAEAE"
-                                stroke-width="1.19531" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg></span>
-                        </button>
-                      </div>
+                  </h3>
 
-                      <div class="product-list">
-                        <div class="row row-cols-4 row-cols-md-3 row-cols-sm-2 gy-3 gy-md-2 gx-2">
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
+                  <nav class="product-category">
+                    <ul class="product-category__list">
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Mobile Game Cards</span>
+                          <span class="number">5</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Game Cards</span>
+                          <span class="number">10</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Payment Cards</span>
+                          <span class="number">12</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Gift Cards</span>
+                          <span class="number">10</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Game Console</span>
+                          <span class="number">10</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Game CD-Key</span>
+                          <span class="number">30</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Video Streaming</span>
+                          <span class="number">10</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Music</span>
+                          <span class="number">49</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Shopping</span>
+                          <span class="number">33</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Tools</span>
+                          <span class="number">34</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Software</span>
+                          <span class="number">56</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Social App</span>
+                          <span class="number">10</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Freebie Codes</span>
+                          <span class="number">01</span>
+                        </a>
+                      </li>
+                      <li class="product-category__item">
+                        <a href="#!" class="product-category__link">
+                          <span>Subscript</span>
+                          <span class="number">34</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
 
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
+                <!-- Khoảng giá -->
+                <div class="sidebar__item">
+                  <h3 class="sidebar__title">Khoảng giá</h3>
 
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                              name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="price-filter">
+                    <div class="price-filter__input">
+                      <input type="range" min="0" max="1000000" step="50000" value="1000000">
                     </div>
+                    <p class="price-filter__text">Price: <strong>500.000 - 1.000.000</strong></p>
+                    <button class="filter-btn">Lọc</button>
+                  </div>
 
-                    <!-- navigation -->
-                    <nav class="navigation-page">
-                      <ul class="navigation__list">
-                        <li class="navigation__item">
-                          <a href="#!" class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"
-                              fill="none">
-                              <path
-                                d="M23 7C23.5523 7 24 7.44772 24 8C24 8.55228 23.5523 9 23 9L23 7ZM0.292893 8.70711C-0.0976314 8.31658 -0.0976315 7.68342 0.292892 7.2929L6.65685 0.928934C7.04738 0.538409 7.68054 0.538409 8.07107 0.928933C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65686 15.0711L0.292893 8.70711ZM23 9L1 9L1 7L23 7L23 9Z"
-                                fill="#787777" />
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="navigation__item">
-                          <a href="#!" class="number active">1</a>
-                        </li>
-                        <li class="navigation__item">
-                          <a href="#!" class="number">2</a>
-                        </li>
-                        <li class="navigation__item">
-                          <a href="#!" class="number">3</a>
-                        </li>
-                        <li class="navigation__item">
-                          <a href="#!" class="number">4</a>
-                        </li>
-                        <li class="navigation__item">
-                          <a href="#!" class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"
-                              fill="none">
-                              <path
-                                d="M1 7C0.447715 7 4.82824e-08 7.44772 0 8C-4.82824e-08 8.55228 0.447715 9 1 9L1 7ZM23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.2929L17.3431 0.928934C16.9526 0.538409 16.3195 0.538409 15.9289 0.928933C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM1 9L23 9L23 7L1 7L1 9Z"
-                                fill="#787777" />
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
+                </div>
+
+                <!-- Đánh giá -->
+                <div class="sidebar__item">
+                  <h3 class="sidebar__title">Đánh giá</h3>
+
+                  <div class="evaluate">
+                    <ul class="evaluate__list">
+                      <li class="evaluate__item">
+                        <label class="evaluate__item-label">
+                          <input type="checkbox" class="evaluate__item-checkbox">
+
+                          <div class="evaluate__item-star">
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star.ejs") %>
+                          </div>
+                          <span class="evaluate__item-number"> (120k)</span>
+                        </label>
+                      </li>
+
+                      <li class="evaluate__item">
+                        <label class="evaluate__item-label">
+                          <input type="checkbox" class="evaluate__item-checkbox">
+                          <div class="evaluate__item-star">
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star-none.ejs") %>
+                          </div>
+                          <span class="evaluate__item-number"> (120k)</span>
+                        </label>
+                      </li>
+
+                      <li class="evaluate__item">
+                        <label class="evaluate__item-label">
+                          <input type="checkbox" class="evaluate__item-checkbox">
+                          <div class="evaluate__item-star">
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star-none.ejs") %>
+                            <%- include("./icon/star-none.ejs") %>
+                          </div>
+                          <span class="evaluate__item-number"> (120k)</span>
+                        </label>
+                      </li>
+
+                      <li class="evaluate__item">
+                        <label class="evaluate__item-label">
+                          <input type="checkbox" class="evaluate__item-checkbox">
+                          <div class="evaluate__item-star">
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star-none.ejs") %>
+                            <%- include("./icon/star-none.ejs") %>
+                            <%- include("./icon/star-none.ejs") %>
+                          </div>
+                          <span class="evaluate__item-number"> (120k)</span>
+                        </label>
+                      </li>
+
+                      <li class="evaluate__item">
+                        <label class="evaluate__item-label">
+                          <input type="checkbox" class="evaluate__item-checkbox">
+                          <div class="evaluate__item-star">
+                            <%- include("./icon/star.ejs") %>
+                            <%- include("./icon/star-none.ejs") %>
+                            <%- include("./icon/star-none.ejs") %>
+                            <%- include("./icon/star-none.ejs") %>
+                            <%- include("./icon/star-none.ejs") %>
+                          </div>
+                          <span class="evaluate__item-number"> (120k)</span>
+                        </label>
+                      </li>
+                    </ul>
                   </div>
                 </div>
+
+                <!-- Thương hiệu -->
+                <div class="sidebar__item">
+                  <h3 class="sidebar__title">Thương hiệu</h3>
+
+                  <div class="brand">
+                    <ul class="brand__list">
+                      <%- include('./components/brand-item',{name:'Apple'}) %>
+                      <%- include('./components/brand-item',{name:'Google'}) %>
+                      <%- include('./components/brand-item',{name:'Microsoft'}) %>
+                      <%- include('./components/brand-item',{name:'Amazon'}) %>
+                      <%- include('./components/brand-item',{name:'McDonald \'s'}) %>
+                      <%- include('./components/brand-item',{name:'Visa'}) %>
+                      <%- include('./components/brand-item',{name:'Tencent'}) %>
+                      <%- include('./components/brand-item',{name:'Louis Vuitton'}) %>
+                      <%- include('./components/brand-item',{name:'MasterCard'}) %>
+                      <%- include('./components/brand-item',{name:'Coca-Cola'}) %>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="sidebar-banner">
+                  <div class="sidebar-banner__img">
+                    <img src="/assets/images/collection-banner-img.png" alt="">
+                  </div>
+                  <h3 class="sidebar-banner__title">Card voucher hot news</h3>
+                  <div class="d-flex justify-content-center">
+                    <a href="#!" class="banner-btn-view-all">
+                      <span class="text">
+                        View all
+                      </span>
+                      <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                          <path d="M2.58438 6.45203L7.62439 6.45203L5.42249 8.65393C5.24652 8.82991 5.24652 9.11868 5.42249 9.29465C5.46423 9.33648 5.51381 9.36967 5.5684 9.39231C5.62298 9.41495 5.6815 9.42661 5.74059 9.42661C5.79969 9.42661 5.8582 9.41495 5.91278 9.39231C5.96737 9.36967 6.01695 9.33648 6.05869 9.29465L9.03217 6.32118C9.074 6.27943 9.10718 6.22985 9.12983 6.17527C9.15247 6.12068 9.16412 6.06217 9.16412 6.00307C9.16412 5.94398 9.15247 5.88546 9.12983 5.83088C9.10718 5.7763 9.074 5.72671 9.03217 5.68497L6.05869 2.71149C6.01692 2.66972 5.96733 2.63658 5.91275 2.61398C5.85817 2.59137 5.79967 2.57973 5.74059 2.57973C5.68151 2.57973 5.62302 2.59137 5.56843 2.61398C5.51385 2.63658 5.46426 2.66972 5.42249 2.71149C5.38071 2.75327 5.34758 2.80286 5.32497 2.85744C5.30236 2.91202 5.29073 2.97052 5.29073 3.0296C5.29073 3.08868 5.30236 3.14717 5.32497 3.20175C5.34758 3.25633 5.38071 3.30593 5.42249 3.3477L7.62439 5.54961L2.58438 5.54961C2.33621 5.54961 2.13317 5.75265 2.13317 6.00082C2.13317 6.24898 2.33621 6.45203 2.58438 6.45203Z" fill="#ED5B1F"></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+            </div>
+
+            <div class="col-9 col-md-12 column-collection">
+              <div class="collection__product">
+                <!-- Product List -->
+                <div>
+                  <div class="collection__product-menu">
+                    <label for="toggle-product-category-mobile">
+                      <span class="btn-show-category">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
+                          <path d="M11.3334 1H0.666707M9.33337 5H0.666707M7.33337 9H0.666707" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </label>
+
+                    <ul class="breadcrumb">
+                      <li>
+                        <a href="#!">
+                          Card Voucher
+                        </a>
+                      </li>
+                      <ul>
+                        <li>
+                          <span>Mobile card</span>
+                        </li>
+                      </ul>
+                    </ul>
+                  </div>
+
+                  <div class="collection__product-head">
+                    <p class="showing-result">
+                      Showing 1-12
+                    </p>
+                    <button class="btn-sort-filter">
+                      <span>Sort by latest</span>
+                      <span class="d-flex"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                          <path d="M0.81958 1.31907L4.66164 5.16113L8.5037 1.31907" stroke="#AEAEAE" stroke-width="1.19531" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span>
+                    </button>
+                  </div>
+
+                  <div class="product-list">
+                    <div class="row row-cols-4 row-cols-md-3 row-cols-sm-2 gy-3 gy-md-2 gx-2">
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-2.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-3.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-4.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-5.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-6.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-7.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-8.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-9.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-10.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-12.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-13.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-14.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-15.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-16.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-17.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-18.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-19.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-20.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+
+                      <div class="col">
+                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-21.png',
+                              name:'Target Gift Card 50$ (US)' }) %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- navigation -->
+                <nav class="navigation-page">
+                  <ul class="navigation__list">
+                    <li class="navigation__item">
+                      <a href="#!" class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                          <path d="M23 7C23.5523 7 24 7.44772 24 8C24 8.55228 23.5523 9 23 9L23 7ZM0.292893 8.70711C-0.0976314 8.31658 -0.0976315 7.68342 0.292892 7.2929L6.65685 0.928934C7.04738 0.538409 7.68054 0.538409 8.07107 0.928933C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65686 15.0711L0.292893 8.70711ZM23 9L1 9L1 7L23 7L23 9Z" fill="#787777" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#!" class="number active">1</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#!" class="number">2</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#!" class="number">3</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#!" class="number">4</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="#!" class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                          <path d="M1 7C0.447715 7 4.82824e-08 7.44772 0 8C-4.82824e-08 8.55228 0.447715 9 1 9L1 7ZM23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.2929L17.3431 0.928934C16.9526 0.538409 16.3195 0.538409 15.9289 0.928933C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM1 9L23 9L23 7L1 7L1 9Z" fill="#787777" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-        </main>
+    </main>
 
-        <!-- Footer -->
-        <%- include("./partials/footer.ejs") %>
-    </div>
-    <script type="module" src="./main.js"></script>
-  </body>
+    <!-- Footer -->
+    <%- include("./partials/footer.ejs") %>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
 
 </html>
