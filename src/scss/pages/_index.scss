@@ -76,7 +76,6 @@ $spacing-section: 4rem;
     margin-bottom: 1.5rem;
     ul {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
       column-gap: 2rem;
       row-gap: 1rem;
@@ -313,6 +312,14 @@ $spacing-section: 4rem;
     &-item {
       &__right {
         display: none;
+      }
+    }
+  }
+
+  .product-hot {
+    &__navigation {
+      ul {
+        justify-content: center;
       }
     }
   }

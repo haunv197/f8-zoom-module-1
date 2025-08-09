@@ -44,6 +44,7 @@
   }
 
   &-img {
+    display: flex;
     width: 8rem;
     aspect-ratio: 80/69.495;
     flex-shrink: 0;

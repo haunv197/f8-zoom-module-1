@@ -1,460 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include("./partials/head.ejs") %>
-  <!-- Code by HauNV -->
+<!-- Code by HauNV -->
 
-  <body>
-    <div class="wrapper">
-      <!-- Header -->
-      <%- include("./partials/header.ejs") %>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <%- include("./partials/header.ejs") %>
 
-        <main class="main">
-          <!-- Home Banner -->
-          <section class="home-banner">
-            <div class="container">
-              <div class="home-banner__wrapper">
-                <div class="home-banner__img">
-                  <img src="/assets/images/home/home-banner-img.png" alt=" Banner Image" />
+    <main class="main">
+      <!-- Home Banner -->
+      <section class="home-banner">
+        <div class="container">
+          <div class="home-banner__wrapper">
+            <div class="home-banner__img">
+              <img src="/assets/images/home/home-banner-img.png" alt=" Banner Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits -->
+      <section class="benefit">
+        <div class="container">
+          <div class="benefit__wrapper">
+            <ul class="benefit-list">
+              <li class="benefit-item">
+                <div class="benefit-item__img">
+                  <img src="/assets/images/home/benefit-fast-deposit.png" alt="Nạp rút nhanh chón" />
+                </div>
+                <h3 class="benefit-item__name">Nạp rút nhanh chóng</h3>
+              </li>
+
+              <li class="benefit-item">
+                <div class="benefit-item__img">
+                  <img src="/assets/images/home/benefit-sale.png" alt="Giảm giá sâ" />
+                </div>
+                <h3 class="benefit-item__name">Giảm giá sâu</h3>
+              </li>
+
+              <li class="benefit-item">
+                <div class="benefit-item__img">
+                  <img src="/assets/images/home/benefit-refund.png" alt="Hoàn tiền" />
+                </div>
+                <h3 class="benefit-item__name">Hoàn tiền</h3>
+              </li>
+
+              <li class="benefit-item">
+                <div class="benefit-item__img">
+                  <img src="/assets/images/home/benefit-security.png" alt="Bảo mật" />
+                </div>
+                <h3 class="benefit-item__name">Bảo mật</h3>
+              </li>
+
+              <li class="benefit-item">
+                <div class="benefit-item__img">
+                  <img src="/assets/images/home/benefit-reputation.png" alt="Uy tín" />
+                </div>
+                <h3 class="benefit-item__name">Uy tín</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gifts -->
+      <section class="gift">
+        <div class="container">
+          <div class="gift__wrapper">
+            <div class="gift-list">
+              <div class="gift-item">
+                <div class="gift-item__img">
+                  <img src="assets/images/home/gift-1.png" alt="Gift 1" />
+                </div>
+              </div>
+
+              <div class="gift-item gift-item__right">
+                <div class="gift-item__img">
+                  <img src="assets/images/home/gift-2.png" alt="Gift 2" />
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </div>
+      </section>
 
-          <!-- Benefits -->
-          <section class="benefit">
-            <div class="container">
-              <div class="benefit__wrapper">
-                <ul class="benefit-list">
-                  <li class="benefit-item">
-                    <div class="benefit-item__img">
-                      <img src="/assets/images/home/benefit-fast-deposit.png" alt="Nạp rút nhanh chón" />
-                    </div>
-                    <h3 class="benefit-item__name">Nạp rút nhanh chóng</h3>
-                  </li>
+      <!-- Product Hot -->
+      <section class="product-hot">
+        <div class="container">
+          <div class="product-hot__wrapper">
+            <nav class="product-hot__navigation">
+              <ul>
+                <li>
+                  <a href="#!" class="active">Hôm nay có gì</a>
+                </li>
+                <li>
+                  <a href="#!">Gợi ý cho bạn</a>
+                </li>
+                <li>
+                  <a href="#!">Gợi ý cho bạn</a>
+                </li>
+                <li>
+                  <a href="#!">Gợi ý cho bạn</a>
+                </li>
+                <li>
+                  <a href="#!">Gợi ý cho bạn</a>
+                </li>
+              </ul>
+            </nav>
 
-                  <li class="benefit-item">
-                    <div class="benefit-item__img">
-                      <img src="/assets/images/home/benefit-sale.png" alt="Giảm giá sâ" />
-                    </div>
-                    <h3 class="benefit-item__name">Giảm giá sâu</h3>
-                  </li>
+            <!-- Product List -->
+            <div class="product-list">
+              <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 gy-3">
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
+                        name:'Target Gift Card 50$ (US)' }) %>
+                </div>
 
-                  <li class="benefit-item">
-                    <div class="benefit-item__img">
-                      <img src="/assets/images/home/benefit-refund.png" alt="Hoàn tiền" />
-                    </div>
-                    <h3 class="benefit-item__name">Hoàn tiền</h3>
-                  </li>
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-2.png',
+                        name:'Target Gift Card 50$ (US)' }) %>
+                </div>
 
-                  <li class="benefit-item">
-                    <div class="benefit-item__img">
-                      <img src="/assets/images/home/benefit-security.png" alt="Bảo mật" />
-                    </div>
-                    <h3 class="benefit-item__name">Bảo mật</h3>
-                  </li>
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-3.png',
+                        name:'Target Gift Card 50$ (US)' }) %>
+                </div>
 
-                  <li class="benefit-item">
-                    <div class="benefit-item__img">
-                      <img src="/assets/images/home/benefit-reputation.png" alt="Uy tín" />
-                    </div>
-                    <h3 class="benefit-item__name">Uy tín</h3>
-                  </li>
-                </ul>
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-4.png',
+                        name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-5.png',
+                        name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-6.png',
+                        name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-7.png',
+                        name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-5.png',
+                        name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-8.png',
+                        name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-9.png',
+                        name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <a href="#!" class="btn-view-all">Xem tất cả</a>
               </div>
             </div>
-          </section>
+          </div>
+        </div>
+      </section>
 
-          <!-- Gifts -->
-          <section class="gift">
-            <div class="container">
-              <div class="gift__wrapper">
-                <div class="gift-list">
-                  <div class="gift-item">
-                    <div class="gift-item__img">
-                      <img src="assets/images/home/gift-1.png" alt="Gift 1" />
-                    </div>
+      <!-- Top Seller Gift Card -->
+      <section class="seller">
+        <div class="container">
+          <div class="seller__wrapper">
+            <div class="seller-content">
+              <h2 class="seller-content__title">Top Seller Gift Card</h2>
+              <p class="seller-content__des">
+                Don't miss our limited-time offers! Discover current deals
+                today!
+              </p>
+              <div class="d-flex justify-content-center">
+                <%- include('./components/banner-btn-view-all',{text:'View all'}) %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product by category -->
+      <section class="product-by-category">
+        <div class="container">
+          <div class="product-by-category__wrapper">
+            <!--Product category Head -->
+            <%- include('./components/product-head',{categoryName:'Sản phẩm theo danh mục'}) %>
+
+            <!-- Banner List -->
+            <div class="banner-list">
+              <div class="banner-item">
+                <img src="/assets/images/home/banner-product-category-1.png" alt="" />
+              </div>
+              <div class="banner-item banner-item--custom-bg banner-item--mobile-hide">
+                <img src="/assets/images/home/banner-product-category-2.png" alt="" />
+              </div>
+            </div>
+
+            <!-- Product List -->
+            <div class="product-list">
+              <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 gy-3">
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-10.png',
+                          name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-12.png',
+                          name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-13.png',
+                          name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-14.png',
+                          name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-15.png',
+                          name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <a href="#!" class="btn-view-all">Xem tất cả</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best selling products -->
+      <section class="best-selling-products">
+        <div class="container">
+          <div class="best-selling-products__wrapper">
+            <!--Product Head -->
+            <%- include('./components/product-head',{categoryName:'Sản phẩm bán chạy'}) %>
+
+            <div class="row best-selling-products__content">
+              <!-- Banner List -->
+              <div class="col-5 col-md-12">
+                <div class="best-selling-products__banner">
+                  <div class="banner__img">
+                    <img src="/assets/images/home/banner-best-selling-product.png" alt="" />
                   </div>
-
-                  <div class="gift-item gift-item__right">
-                    <div class="gift-item__img">
-                      <img src="assets/images/home/gift-2.png" alt="Gift 2" />
-                    </div>
+                  <h2 class="banner__title">Card voucher hot news</h2>
+                  <div class="d-flex justify-content-center">
+                    <%- include('./components/banner-btn-view-all',{text:'View all'}) %>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
 
-          <!-- Product Hot -->
-          <section class="product-hot">
-            <div class="container">
-              <div class="product-hot__wrapper">
-                <nav class="product-hot__navigation">
-                  <ul>
-                    <li>
-                      <a href="#!" class="active">Hôm nay có gì</a>
-                    </li>
-                    <li>
-                      <a href="#!">Gợi ý cho bạn</a>
-                    </li>
-                    <li>
-                      <a href="#!">Gợi ý cho bạn</a>
-                    </li>
-                    <li>
-                      <a href="#!">Gợi ý cho bạn</a>
-                    </li>
-                    <li>
-                      <a href="#!">Gợi ý cho bạn</a>
-                    </li>
-                  </ul>
-                </nav>
-
-                <!-- Product List -->
+              <!-- Product List -->
+              <div class="col-7 col-md-12 col-product">
                 <div class="product-list">
-                  <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 gy-3">
+                  <div class="row row-cols-3 row-cols-sm-2 gy-3">
                     <div class="col">
-                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                        name:'Target Gift Card 50$ (US)' }) %>
-                    </div>
-
-                    <div class="col">
-                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                        name:'Target Gift Card 50$ (US)' }) %>
-                    </div>
-
-                    <div class="col">
-                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                        name:'Target Gift Card 50$ (US)' }) %>
-                    </div>
-
-                    <div class="col">
-                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                        name:'Target Gift Card 50$ (US)' }) %>
-                    </div>
-
-                    <div class="col">
-                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                        name:'Target Gift Card 50$ (US)' }) %>
-                    </div>
-
-                    <div class="col">
-                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                        name:'Target Gift Card 50$ (US)' }) %>
-                    </div>
-
-                    <div class="col">
-                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                        name:'Target Gift Card 50$ (US)' }) %>
-                    </div>
-
-                    <div class="col">
-                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                        name:'Target Gift Card 50$ (US)' }) %>
-                    </div>
-
-                    <div class="col">
-                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                        name:'Target Gift Card 50$ (US)' }) %>
-                    </div>
-
-                    <div class="col">
-                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                        name:'Target Gift Card 50$ (US)' }) %>
-                    </div>
-                  </div>
-
-                  <div class="d-flex justify-content-center">
-                    <a href="#!" class="btn-view-all">Xem tất cả</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Top Seller Gift Card -->
-          <section class="seller">
-            <div class="container">
-              <div class="seller__wrapper">
-                <div class="seller-content">
-                  <h2 class="seller-content__title">Top Seller Gift Card</h2>
-                  <p class="seller-content__des">
-                    Don't miss our limited-time offers! Discover current deals
-                    today!
-                  </p>
-                  <div class="d-flex justify-content-center">
-                    <%- include('./components/banner-btn-view-all',{text:'View all'}) %>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Product by category -->
-          <section class="product-by-category">
-            <div class="container">
-              <div class="product-by-category__wrapper">
-                <!--Product category Head -->
-                <%- include('./components/product-head',{categoryName:'Sản phẩm theo danh mục'}) %>
-
-                  <!-- Banner List -->
-                  <div class="banner-list">
-                    <div class="banner-item">
-                      <img src="/assets/images/home/banner-product-category-1.png" alt="" />
-                    </div>
-                    <div class="banner-item banner-item--custom-bg banner-item--mobile-hide">
-                      <img src="/assets/images/home/banner-product-category-2.png" alt="" />
-                    </div>
-                  </div>
-
-                  <!-- Product List -->
-                  <div class="product-list">
-                    <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 gy-3">
-                      <div class="col">
-                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                          name:'Target Gift Card 50$ (US)' }) %>
-                      </div>
-
-                      <div class="col">
-                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                          name:'Target Gift Card 50$ (US)' }) %>
-                      </div>
-
-                      <div class="col">
-                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                          name:'Target Gift Card 50$ (US)' }) %>
-                      </div>
-
-                      <div class="col">
-                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                          name:'Target Gift Card 50$ (US)' }) %>
-                      </div>
-
-                      <div class="col">
-                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                          name:'Target Gift Card 50$ (US)' }) %>
-                      </div>
-                    </div>
-
-                    <div class="d-flex justify-content-center">
-                      <a href="#!" class="btn-view-all">Xem tất cả</a>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Best selling products -->
-          <section class="best-selling-products">
-            <div class="container">
-              <div class="best-selling-products__wrapper">
-                <!--Product Head -->
-                <%- include('./components/product-head',{categoryName:'Sản phẩm bán chạy'}) %>
-
-                  <div class="row best-selling-products__content">
-                    <!-- Banner List -->
-                    <div class="col-5 col-md-12">
-                      <div class="best-selling-products__banner">
-                        <div class="banner__img">
-                          <img src="/assets/images/home/banner-best-selling-product.png" alt="" />
-                        </div>
-                        <h2 class="banner__title">Card voucher hot news</h2>
-                        <div class="d-flex justify-content-center">
-                          <%- include('./components/banner-btn-view-all',{text:'View all'}) %>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Product List -->
-                    <div class="col-7 col-md-12 col-product">
-                      <div class="product-list">
-                        <div class="row row-cols-3 row-cols-sm-2 gy-3">
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
+                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-16.png',
                               name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
+                    </div>
 
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
+                    <div class="col">
+                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-17.png',
                               name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
+                    </div>
 
-                          <div class="col">
-                            <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
+                    <div class="col">
+                      <%- include('./components/product-item', { img:'/assets/images/product/image-product-18.png',
                               name:'Target Gift Card 50$ (US)' }) %>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </section>
-
-          <!--Latest Product -->
-          <section class="latest-product">
-            <div class="container">
-              <div class="latest-product__wrapper">
-                <%- include('./components/product-head',{categoryName:'Sản phẩm mới nhất'}) %>
-
-                  <!-- Product List -->
-                  <div class="product-list">
-                    <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
-                      <div class="col">
-                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                          name:'Target Gift Card 50$ (US)' }) %>
-                      </div>
-
-                      <div class="col">
-                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                          name:'Target Gift Card 50$ (US)' }) %>
-                      </div>
-
-                      <div class="col">
-                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                          name:'Target Gift Card 50$ (US)' }) %>
-                      </div>
-
-                      <div class="col">
-                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                          name:'Target Gift Card 50$ (US)' }) %>
-                      </div>
-
-                      <div class="col">
-                        <%- include('./components/product-item', { img:'/assets/images/product/image-product-1.png',
-                          name:'Target Gift Card 50$ (US)' }) %>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Product Groups -->
-          <section class="product-groups">
-            <div class="container">
-              <div class="product-groups__wrapper">
-                <div class="row row-cols-3 row-cols-md-1">
-                  <div class="col">
-                    <div class="product-group">
-                      <!--Product Group Head -->
-                      <%- include('./components/product-group-heading',{title:'Top Selling product'}) %>
-
-                        <div class="product-group__list">
-                          <%-
-                            include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})%>
-                            <%-
-                              include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})%>
-                              <%-
-                                include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})%>
-                                <%-
-                                  include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})%>
-                        </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="product-group">
-                      <!--Product Group Head -->
-                      <%- include('./components/product-group-heading',{title:'Featureed Product'}) %>
-
-                        <div class="product-group__list">
-                          <%-
-                            include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})
-                            %> <%-
-                              include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})
-                              %> <%-
-                                include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})
-                                %> <%-
-                                  include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})
-                                  %>
-                        </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="product-group">
-                      <!--Product Group Head -->
-                      <%- include('./components/product-group-heading',{title:'On-sale Product'}) %>
-
-                        <div class="product-group__list">
-                          <%-
-                            include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})
-                            %> <%-
-                              include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})
-                              %> <%-
-                                include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})
-                                %> <%-
-                                  include('./components/product-group-item',{img:'/assets/images/product/image-product-1.png'})
-                                  %>
-                        </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </div>
+      </section>
 
-          <!-- News -->
-          <section class="news">
-            <div class="container">
-              <div class="news__wrapper">
-                <!-- News Heading -->
-                <div class="news-head">
-                  <h2 class="news-head__title">
-                    Tin tức & Khuyến mại
-                  </h2>
-                  <div class="news-head__arrow">
-                    <a href="#!" class="icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path
-                          d="M3.75033 9.75098L12.1278 9.75098L8.46783 13.411C8.17533 13.7035 8.17533 14.1835 8.46783 14.476C8.53722 14.5455 8.61963 14.6007 8.71036 14.6383C8.80109 14.6759 8.89836 14.6953 8.99658 14.6953C9.09481 14.6953 9.19207 14.6759 9.2828 14.6383C9.37353 14.6007 9.45595 14.5455 9.52533 14.476L14.4678 9.53348C14.5374 9.46409 14.5925 9.38168 14.6302 9.29095C14.6678 9.20022 14.6872 9.10296 14.6872 9.00473C14.6872 8.9065 14.6678 8.80924 14.6302 8.71851C14.5925 8.62778 14.5374 8.54536 14.4678 8.47598L9.52533 3.53348C9.45589 3.46404 9.37346 3.40896 9.28274 3.37139C9.19201 3.33381 9.09478 3.31447 8.99658 3.31447C8.89838 3.31447 8.80115 3.33381 8.71042 3.37139C8.6197 3.40896 8.53727 3.46404 8.46783 3.53348C8.39839 3.60292 8.34331 3.68535 8.30574 3.77607C8.26816 3.8668 8.24882 3.96403 8.24882 4.06223C8.24882 4.16043 8.26816 4.25766 8.30574 4.34839C8.34331 4.43911 8.39839 4.52154 8.46783 4.59098L12.1278 8.25098L3.75033 8.25098C3.33783 8.25098 3.00033 8.58848 3.00033 9.00098C3.00033 9.41348 3.33783 9.75098 3.75033 9.75098Z"
-                          fill="white" />
-                      </svg>
-                    </a>
-                  </div>
+      <!--Latest Product -->
+      <section class="latest-product">
+        <div class="container">
+          <div class="latest-product__wrapper">
+            <%- include('./components/product-head',{categoryName:'Sản phẩm mới nhất'}) %>
+
+            <!-- Product List -->
+            <div class="product-list">
+              <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-16.png',
+                          name:'Target Gift Card 50$ (US)' }) %>
                 </div>
 
-                <!-- News List -->
-                <div class="news-list">
-                  <div class="row row-cols-3 row-cols-md-2 row-cols-sm-1">
-                    <div class="col">
-                      <%- include('./components/news-item',{img:'/assets/images/news/news.png'}) %>
-                    </div>
-                    <div class="col">
-                      <%- include('./components/news-item',{img:'/assets/images/news/news.png'}) %>
-                    </div>
-                    <div class="col">
-                      <%- include('./components/news-item',{img:'/assets/images/news/news.png'}) %>
-                    </div>
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-17.png',
+                          name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-19.png',
+                          name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-20.png',
+                          name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+
+                <div class="col">
+                  <%- include('./components/product-item', { img:'/assets/images/product/image-product-21.png',
+                          name:'Target Gift Card 50$ (US)' }) %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Groups -->
+      <section class="product-groups">
+        <div class="container">
+          <div class="product-groups__wrapper">
+            <div class="row row-cols-3 row-cols-md-1">
+              <div class="col">
+                <div class="product-group">
+                  <!--Product Group Head -->
+                  <%- include('./components/product-group-heading',{title:'Top Selling product'}) %>
+
+                  <div class="product-group__list">
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-22.png'})%>
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-23.png'})%>
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-24.png'})%>
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-25.png'})%>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="product-group">
+                  <!--Product Group Head -->
+                  <%- include('./components/product-group-heading',{title:'Featured Product'}) %>
+
+                  <div class="product-group__list">
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-22.png'})%>
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-23.png'})%>
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-24.png'})%>
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-25.png'})%>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="product-group">
+                  <!--Product Group Head -->
+                  <%- include('./components/product-group-heading',{title:'On-sale Product'}) %>
+
+                  <div class="product-group__list">
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-22.png'})%>
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-23.png'})%>
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-24.png'})%>
+                    <%- include('./components/product-group-item',{img:'/assets/images/product/image-product-25.png'})%>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </div>
+      </section>
 
-          <!-- Top Seller Gift Card -->
-          <section class="seller seller--bg-secondary">
-            <div class="container">
-              <div class="seller__wrapper">
-                <div class="seller-content">
-                  <h2 class="seller-content__title">Top Seller Gift Card</h2>
-                  <p class="seller-content__des">
-                    Don't miss our limited-time offers! Discover current deals
-                    today!
-                  </p>
-                  <div class="d-flex justify-content-center">
-                    <%- include('./components/banner-btn-view-all',{text:'View all'}) %>
-                  </div>
+      <!-- News -->
+      <section class="news">
+        <div class="container">
+          <div class="news__wrapper">
+            <!-- News Heading -->
+            <div class="news-head">
+              <h2 class="news-head__title">
+                Tin tức & Khuyến mại
+              </h2>
+              <div class="news-head__arrow">
+                <a href="#!" class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M3.75033 9.75098L12.1278 9.75098L8.46783 13.411C8.17533 13.7035 8.17533 14.1835 8.46783 14.476C8.53722 14.5455 8.61963 14.6007 8.71036 14.6383C8.80109 14.6759 8.89836 14.6953 8.99658 14.6953C9.09481 14.6953 9.19207 14.6759 9.2828 14.6383C9.37353 14.6007 9.45595 14.5455 9.52533 14.476L14.4678 9.53348C14.5374 9.46409 14.5925 9.38168 14.6302 9.29095C14.6678 9.20022 14.6872 9.10296 14.6872 9.00473C14.6872 8.9065 14.6678 8.80924 14.6302 8.71851C14.5925 8.62778 14.5374 8.54536 14.4678 8.47598L9.52533 3.53348C9.45589 3.46404 9.37346 3.40896 9.28274 3.37139C9.19201 3.33381 9.09478 3.31447 8.99658 3.31447C8.89838 3.31447 8.80115 3.33381 8.71042 3.37139C8.6197 3.40896 8.53727 3.46404 8.46783 3.53348C8.39839 3.60292 8.34331 3.68535 8.30574 3.77607C8.26816 3.8668 8.24882 3.96403 8.24882 4.06223C8.24882 4.16043 8.26816 4.25766 8.30574 4.34839C8.34331 4.43911 8.39839 4.52154 8.46783 4.59098L12.1278 8.25098L3.75033 8.25098C3.33783 8.25098 3.00033 8.58848 3.00033 9.00098C3.00033 9.41348 3.33783 9.75098 3.75033 9.75098Z" fill="white" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- News List -->
+            <div class="news-list">
+              <div class="row row-cols-3 row-cols-md-2 row-cols-sm-1">
+                <div class="col">
+                  <%- include('./components/news-item',{img:'/assets/images/news/image-news-1.png'}) %>
+                </div>
+                <div class="col">
+                  <%- include('./components/news-item',{img:'/assets/images/news/image-news-2.png'}) %>
+                </div>
+                <div class="col">
+                  <%- include('./components/news-item',{img:'/assets/images/news/image-news-3.png'}) %>
                 </div>
               </div>
             </div>
-          </section>
-        </main>
+          </div>
+        </div>
+      </section>
 
-        <!-- Footer -->
-        <%- include("./partials/footer.ejs") %>
-    </div>
-    <script type="module" src="./main.js"></script>
-  </body>
+      <!-- Top Seller Gift Card -->
+      <section class="seller seller--bg-secondary">
+        <div class="container">
+          <div class="seller__wrapper">
+            <div class="seller-content">
+              <h2 class="seller-content__title">Top Seller Gift Card</h2>
+              <p class="seller-content__des">
+                Don't miss our limited-time offers! Discover current deals
+                today!
+              </p>
+              <div class="d-flex justify-content-center">
+                <%- include('./components/banner-btn-view-all',{text:'View all'}) %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <%- include("./partials/footer.ejs") %>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
 
 </html>
