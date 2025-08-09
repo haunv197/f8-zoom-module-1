@@ -132,6 +132,7 @@
       box-shadow: 0 0.4206rem 1.125rem 0 rgba(244, 244, 244, 0.5);
 
       &__wrapper {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -143,16 +144,88 @@
           align-items: center;
           gap: 1rem;
 
-          & > li > a {
+          & > .nav-item > a {
             color: var(--color-grey);
             font-weight: 500;
-            padding: 0.5rem;
+            padding: 1.65rem 1rem;
+            display: inline-block;
+
             &:first-child {
               padding-left: 0;
             }
             &:hover {
               color: var(--color-primary);
             }
+          }
+
+          .mega-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: var(--color-white);
+            box-shadow: -0.1rem 0.7rem 1.4rem 0.5rem rgb(33 33 33 / 20%);
+            padding: 3.9rem 4.8rem 4.9rem;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 10;
+
+            & > .nav-item {
+              a {
+                font-weight: 500;
+                color: var(--color-secondary);
+                font-family: var(--font-manrope);
+                &:hover {
+                  color: var(--color-primary);
+                }
+              }
+
+              & > a {
+                font-size: 1.8rem;
+                padding: 0.8rem 1.2rem;
+                width: 26.6rem;
+                display: flex;
+                justify-content: space-between;
+                &:hover .icon path {
+                  stroke: var(--color-primary);
+                }
+              }
+
+              .sub-menu {
+                max-width: 64rem;
+                position: absolute;
+                top: 4.8rem;
+                left: calc(26.6rem + 4.8rem + 9.9rem);
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 7.1rem;
+                padding: 0;
+                opacity: 0;
+                visibility: hidden;
+
+                a {
+                  display: inline-block;
+                  font-size: 1.4rem;
+                  padding: 0.75rem 0;
+
+                  &:hover {
+                    transform: translateX(1rem);
+                  }
+                }
+              }
+
+              &:hover .sub-menu {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+          & > .nav-item:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
           }
         }
       }
@@ -271,6 +344,11 @@
             color: var(--color-primary);
           }
         }
+      }
+
+      .mega-menu {
+        padding-left: 2rem;
+        display: none;
       }
 
       .btn-close-nav {
